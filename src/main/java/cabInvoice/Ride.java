@@ -1,3 +1,5 @@
+package cabInvoice;
+
 public class Ride {
 
     public final int time;

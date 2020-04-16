@@ -1,3 +1,5 @@
+package cabInvoice;
+
 public class InvoiceSummary {
 
     public final double totalFare;
