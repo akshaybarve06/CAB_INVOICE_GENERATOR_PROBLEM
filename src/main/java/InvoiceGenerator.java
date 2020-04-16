@@ -2,8 +2,12 @@ public class InvoiceGenerator {
 
     public static final double MIN_COST_PER_KMS = 10 ;
     public static final int COST_PER_TIME = 1 ;
+    public static final int MIN_FARE=5;
 
     public double calculateFare(double distance, int time) {
-        return distance*MIN_COST_PER_KMS + time*COST_PER_TIME;
+        double totalFare= distance*MIN_COST_PER_KMS + time*COST_PER_TIME;
+        if ( totalFare < MIN_FARE)
+            return MIN_FARE;
+        return totalFare;
     }
 }
